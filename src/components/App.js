@@ -1,11 +1,10 @@
-import React from 'react';
-import {connect} from 'react-redux'
+import React from "react";
+import { connect } from "react-redux";
 import TableContainer from "./Table/TableContainer";
-import {getDataBig, getDataSmall} from "../redux/actions/actions";
+import { getDataBig, getDataSmall } from "../redux/actions/actions";
 
-class App extends React.Component{
-
-  render(){
+class App extends React.Component {
+  render() {
     return (
       <div className="container">
         <h1 className="text-center">Table</h1>
@@ -16,35 +15,33 @@ class App extends React.Component{
             // className={`btn btn-primary mr-3 ${this.props.isLoading ? "disabled" : null} `}
             onClick={this.props.getDataSmall}
             disabled={this.props.isLoading}
-          >Small Data</button>
+          >
+            Small Data
+          </button>
           <button
             type="button"
             className="btn btn-secondary mr-3"
             onClick={this.props.getDataBig}
             disabled={this.props.isLoading}
-          >Big Data</button>
+          >
+            Big Data
+          </button>
         </div>
 
         <div className="mt-3 text-center">
-            <TableContainer/>
+          <TableContainer />
         </div>
-
       </div>
     );
   }
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = state => {
   return {
     isLoading: state.getDataReducer.isLoading
-  }
-}
+  };
+};
 
-function mapDispatchToProps(dispatch) {
-  return {
-    getDataSmall: () => dispatch(getDataSmall()),
-    getDataBig: () => dispatch(getDataBig()),
-  }
-}
+const mapDispatchToProps = { getDataSmall, getDataBig };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
