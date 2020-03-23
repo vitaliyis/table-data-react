@@ -1,7 +1,5 @@
-import {
-  GET_DATA, IS_LOADING, SET_CURRENT_PAGE, SET_QUANTITY_PAGE, UPDATE_DATA, UPDATE_SORT_DATA,
-  UPDATE_SORT_ID
-} from "./actionTypes";
+import {GET_DATA, IS_LOADING, SET_CURRENT_PAGE,
+  SET_QUANTITY_PAGE, UPDATE_DATA, UPDATE_SORT_DATA} from "./actionTypes";
 import {fetchGetDataBig, fetchGetDataSmall} from "../../api/api";
 
 // actionCreators =======================================================

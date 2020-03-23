@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/table-data-react/static/css/main.feb497b2.chunk.css",
+    "main.js": "/table-data-react/static/js/main.8809df70.chunk.js",
+    "main.js.map": "/table-data-react/static/js/main.8809df70.chunk.js.map",
+    "runtime-main.js": "/table-data-react/static/js/runtime-main.2c4b2630.js",
+    "runtime-main.js.map": "/table-data-react/static/js/runtime-main.2c4b2630.js.map",
+    "static/css/2.de424728.chunk.css": "/table-data-react/static/css/2.de424728.chunk.css",
+    "static/js/2.0c7ba772.chunk.js": "/table-data-react/static/js/2.0c7ba772.chunk.js",
+    "static/js/2.0c7ba772.chunk.js.map": "/table-data-react/static/js/2.0c7ba772.chunk.js.map",
+    "index.html": "/table-data-react/index.html",
+    "precache-manifest.e7dc734453f74cb209688aca77558f47.js": "/table-data-react/precache-manifest.e7dc734453f74cb209688aca77558f47.js",
+    "service-worker.js": "/table-data-react/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/table-data-react/static/css/2.de424728.chunk.css.map",
+    "static/css/main.feb497b2.chunk.css.map": "/table-data-react/static/css/main.feb497b2.chunk.css.map",
+    "static/js/2.0c7ba772.chunk.js.LICENSE.txt": "/table-data-react/static/js/2.0c7ba772.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2c4b2630.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.0c7ba772.chunk.js",
+    "static/css/main.feb497b2.chunk.css",
+    "static/js/main.8809df70.chunk.js"
+  ]
+}
