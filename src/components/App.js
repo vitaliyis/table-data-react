@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux'
 import TableContainer from "./Table/TableContainer";
-import {getDataBig, getDataSmall} from "../redux/actions/actions";
+import {getDataBig, getDataSmall} from "../redux/reducers/table/table.actions";
 
 class App extends React.Component{
 
@@ -34,13 +34,13 @@ class App extends React.Component{
   }
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = state => {
   return {
-    isLoading: state.getDataReducer.isLoading
+    isLoading: state.tableDataReducer.isLoading
   }
 }
 
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = dispatch => {
   return {
     getDataSmall: () => dispatch(getDataSmall()),
     getDataBig: () => dispatch(getDataBig()),

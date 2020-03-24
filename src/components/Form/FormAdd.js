@@ -60,7 +60,13 @@ const FormAdd = props => {
     if (!getErrors()) {
 
       let id = getLastId(props.data)
-      const newUserData = {id: id + 1, ...userData}
+      const newUserAddress = {
+        streetAddress: "unknown",
+        city: "unknown",
+        state: "unknown",
+        zip: "unknown"
+      }
+      const newUserData = {id: id + 1, ...userData, address: newUserAddress}
       const data = [newUserData, ...props.data]
 
       props.updateData(data)

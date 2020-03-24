@@ -17,3 +17,9 @@ code {
 table tr th {
   cursor: pointer;
 }
+
+@media (max-width: 400px) {
+  .pagination .page-item .page-link {
+    padding: .25rem .5rem;;
+  }
+}

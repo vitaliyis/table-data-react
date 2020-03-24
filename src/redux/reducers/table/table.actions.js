@@ -1,6 +1,6 @@
 import {GET_DATA, IS_LOADING, SET_CURRENT_PAGE,
-  SET_QUANTITY_PAGE, UPDATE_DATA, UPDATE_SORT_DATA} from "./actionTypes";
-import {fetchGetDataBig, fetchGetDataSmall} from "../../api/api";
+  SET_QUANTITY_PAGE, UPDATE_DATA, UPDATE_SORT_DATA} from "./table.types";
+import {fetchGetDataBig, fetchGetDataSmall} from "../../../api/api";
 
 // actionCreators =======================================================
 export const isLoading = payload => {

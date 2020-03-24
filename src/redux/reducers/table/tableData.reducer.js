@@ -1,11 +1,14 @@
 import {
   GET_DATA, IS_LOADING, SET_CURRENT_PAGE, SET_QUANTITY_PAGE, UPDATE_DATA,
   UPDATE_SORT_DATA
-} from "../actions/actionTypes";
+} from "./table.types";
+
+export const SORT_ASC = 'asc'
+export const SORT_DESC = 'desc'
 
 const initialState = {
   isLoading: false,
-  data: null,
+  data: [],
   pagination: {
     quantityPage: null,
     currentPage: 1,
@@ -20,7 +23,7 @@ const initialState = {
   }
 }
 
-const getDataReducer = (state = initialState, action) => {
+const tableDataReducer = (state = initialState, action) => {
   switch (action.type){
     case IS_LOADING:
       return {
@@ -65,4 +68,4 @@ const getDataReducer = (state = initialState, action) => {
 
 }
 
-export default getDataReducer
+export default tableDataReducer

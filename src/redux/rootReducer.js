@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux'
-import getDataReducer from "./reducers/getData.reducer";
+import tableDataReducer from "./reducers/table/tableData.reducer";
 
 export default combineReducers({
-  getDataReducer
+  tableDataReducer
 })
